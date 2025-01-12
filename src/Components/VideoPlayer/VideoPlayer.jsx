@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import './VideoPlayer.css'
-import video from '../../assets/penang.mp4'
 
 const VideoPlayer = ({playState, setPlayState}) => {
 
@@ -15,7 +14,7 @@ const VideoPlayer = ({playState, setPlayState}) => {
   return (
     <div className={`video-player ${playState? '' : 'hide'}`} 
     ref={player} onClick={closePlayer}>
-        <video src={video} autoPlay muted controls></video>
+        <video src='https://drive.google.com/file/d/1rYtRTXrG9xQQP6SpC78LPAcK_vtClJWd/view?usp=sharing' autoPlay muted controls></video>
     </div>
   )
 }
