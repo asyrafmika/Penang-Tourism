@@ -6,7 +6,7 @@ import './Entertainment.css';
 const entertainmentPlaces = [
   {
     name: "Penang Performing Arts Centre",
-    image: 'src/assets/events/penangpac.png',
+    image: '../../assets/events/penangpac.png',
     description: "Performing Arts Centre of Penang is the Northern region’s dedicated arts centre. More than 500 shows have been staged here, attended by almost 150,000 people.",
     address: "3H-3A-1, Quay One, Straits Quay, Jalan Seri Tanjung Pinang, Tanjung Tokong, 10470 Penang, Malaysia",
   },
