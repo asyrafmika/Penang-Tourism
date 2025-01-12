@@ -1,0 +1,85 @@
+.about-penang {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background: url('../../assets/penang_bridge.avif') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content : center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-section {
+  display: flex;
+  margin: 20px;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  flex: 1;
+  padding: 20px;
+}
+
+.attractions, .culinary-delights, .events, .testimonials, .cta {
+  margin: 20px;
+}
+
+.attractions h2, .culinary-delights h2, .events h2, .testimonials h2, .cta h2 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.attraction-item, .dish-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.attraction-item img, .dish-item img {
+  width: 100%;
+  height: auto;
+}
+
+.event-calendar {
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 4px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin: 5px 0;
+}

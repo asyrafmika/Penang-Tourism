@@ -1,0 +1,124 @@
+.gallery {
+    margin: 20px auto;
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 1200px;
+    background: linear-gradient(to bottom, #ffefba, #ffffff); 
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content-gal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+  
+
+.text {
+    flex: 1 1 45%;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    text-align: left;
+}
+  
+.text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+.text p {
+    margin-bottom: 20px;
+}
+  
+.button-gal {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #4caf50, #8bc34a); 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+  
+.button-gal:hover {
+    background: linear-gradient(to right, #3e8e41, #66bb6a);
+}
+  
+.photo {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+}
+  
+.gallery-img {
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    object-fit: cover;
+}
+  
+.gallery-img:hover {
+    transform: scale(1.1); 
+}
+  
+
+.passages {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #84fab0, #8fd3f4); 
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+  
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+
+@media (max-width: 800px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .text {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  
+    .photo {
+      flex: 1 1 100%;
+    }
+  
+    .gallery-img {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+}
+  

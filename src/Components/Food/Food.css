@@ -1,0 +1,125 @@
+.food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #fdf6e4, #fcefe3);
+    padding: 30px;
+}
+  
+.food-title {
+    font-size: 2.5rem;
+    color: #B57114;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+
+.button-f {
+    background-color: #D9A78B;
+    color: #FFF;
+    padding: 14px 24px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 30px auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.button-f:hover {
+    background-color: #B57114;
+    transform: scale(1.05);
+}
+  
+
+.hero-photo {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #FAF3E0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 1200px;
+    width: 100%;
+}
+  
+.text-content {
+    flex: 1.5; 
+    font-size: 18px;
+    color: #333;
+    padding-right: 20px;
+}
+  
+.text-content h2 {
+    font-size: 2rem;
+    color: #593325;
+    margin-bottom: 15px;
+}
+  
+.text-content p {
+    text-align: justify;
+    color: #666;
+    line-height: 1.6;
+}
+  
+
+.hero-photo .hero-img {
+    flex: 0.8; 
+    max-width: 20%; 
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+  
+.hero-photo .hero-img:hover {
+    transform: scale(1.05);
+}
+  
+.photo-f {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+  
+.photo-f img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #B57114;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.photo-f img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+  
+@media (max-width: 768px) {
+    .hero-photo {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content {
+      padding-right: 0;
+    }
+  
+    .hero-photo .hero-img {
+      max-width: 50%; 
+      margin-top: 20px;
+    }
+  
+    .photo-f img {
+      width: 150px;
+      height: 150px;
+    }
+}
+  

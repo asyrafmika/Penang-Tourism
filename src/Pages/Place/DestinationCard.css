@@ -1,0 +1,121 @@
+.des-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.des-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.des-card-image-container {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.des-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.des-card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.des-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.des-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.des-card-content {
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+}
+
+.des-card-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+
+    .des-card-image-container {
+        height: 150px; /* Decrease the image container height on medium screens */
+    }
+
+    .des-card-title {
+        font-size: 1.4rem; /* Slightly smaller title */
+    }
+
+    .des-card-description {
+        font-size: 0.9rem; /* Smaller description text on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .des-card {
+        flex-direction: column; /* Ensure cards stack vertically on smaller screens */
+        height: 100%;
+    }
+
+    .des-card-image-container {
+        height: 120px; /* Smaller image container on small screens */
+    }
+
+    .des-card-title {
+        font-size: 1.2rem; /* Even smaller title */
+    }
+
+    .des-card-description {
+        font-size: 0.85rem; /* Even smaller description text */
+    }
+}
+
+@media (max-width: 480px) {
+    .des-card {
+        margin-bottom: 15px;
+    }
+
+    .des-card-image-container {
+        height: 100px; /* Decrease image container height on very small screens */
+    }
+
+    .des-card-title {
+        font-size: 1rem; /* Much smaller title */
+    }
+
+    .des-card-description {
+        font-size: 0.8rem; /* Decrease the font size of description */
+    }
+
+    .des-card-overlay {
+        font-size: 0.9rem; /* Make overlay text smaller on mobile */
+    }
+}

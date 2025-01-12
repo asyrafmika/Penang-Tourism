@@ -1,0 +1,115 @@
+/* General section styles */
+#culture {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Overlay for transparency */
+.culture-overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content vertically and horizontally */
+  padding: 2rem;
+}
+
+/* Text content styles */
+.culture-content {
+  max-width: 600px;
+  z-index: 1;
+  text-align: center;
+}
+
+.culture-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.culture-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #f0f0f0;
+}
+
+/* Button styling */
+.button-cul {
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.button-cul:hover {
+  background-color: #fff;
+  color: #00796b;
+  transform: scale(1.1);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .culture-title {
+    font-size: 2.5rem;
+  }
+
+  .culture-description {
+    font-size: 1.1rem;
+  }
+
+  .button-cul {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #culture {
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .culture-title {
+    font-size: 2rem;
+  }
+
+  .culture-description {
+    font-size: 1rem;
+  }
+
+  .button-cul {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .culture-title {
+    font-size: 1.6rem;
+  }
+
+  .culture-description {
+    font-size: 0.9rem;
+  }
+
+  .button-cul {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}

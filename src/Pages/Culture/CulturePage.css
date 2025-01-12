@@ -1,0 +1,76 @@
+.cul-culture-page {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(
+            rgba(188, 232, 188, 0.8), 
+            rgba(93, 97, 93, 0.8)
+        ), 
+        url('../../assets/bridge-cul.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Fixes the background */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cul-page-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.cul-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 1024px) {
+    .cul-page-title {
+        font-size: 2.2rem; /* Slightly smaller title */
+        margin-bottom: 30px;
+    }
+
+    .cul-card-grid {
+        gap: 15px; /* Reduce gap between cards on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .cul-page-title {
+        font-size: 2rem;
+    }
+
+    .cul-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Reduce card size */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cul-page-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .cul-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards on mobile */
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .culture-page {
+        background-attachment: scroll; /* Default scrolling background on mobile */
+    }
+}

@@ -1,0 +1,76 @@
+.des-destination-page {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(
+            rgba(188, 232, 188, 0.8), 
+            rgba(93, 97, 93, 0.8)
+        ), 
+        url('../../assets/bridge-cul.jpg') no-repeat center center/cover;
+    background-attachment: fixed; 
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.des-page-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.des-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 1024px) {
+    .des-page-title {
+        font-size: 2.2rem; /* Slightly smaller title */
+        margin-bottom: 30px;
+    }
+
+    .des-card-grid {
+        gap: 15px; /* Reduce gap between cards on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .des-page-title {
+        font-size: 2rem;
+    }
+
+    .des-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Reduce card size */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .des-page-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .des-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards on mobile */
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .des-destination-page {
+        background-attachment: scroll; /* Default scrolling background on mobile */
+    }
+}

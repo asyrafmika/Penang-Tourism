@@ -1,0 +1,289 @@
+/* General Styles */
+.cul-detail-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Detail Container */
+.cul-detail-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Header Section */
+.cul-detail-header {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.cul-detail-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Makes it clear the image is clickable */
+}
+
+.cul-detail-image:hover {
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.cul-detail-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cul-detail-title {
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.cul-detail-story {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Additional Info Section */
+.cul-additional-info {
+    padding: 20px 30px;
+    border-top: 1px solid #fff;
+}
+
+.cul-additional-info-title {
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.cul-additional-info-item {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Gallery Section */
+.cul-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.cul-gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #f9f9f9; /* Optional: Add a background color for hover contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on the Entire Gallery Item */
+.cul-gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Image inside the Gallery Item */
+.cul-gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+}
+
+/* Caption inside the Gallery Item */
+.cul-image-caption {
+    font-size: 0.9rem;
+    font-family: "Roboto", sans-serif;
+    color: #555;
+    padding: 10px 5px;
+    font-style: italic;
+    text-align: center;
+    background-color: #f9f9f9;
+    width: 100%;
+    border-radius: 0 0 10px 10px; /* Rounded corners only at the bottom */
+}
+
+/* Popup Styles */
+.cul-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.cul-popup-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: scaleIn 0.3s ease;
+}
+
+.cul-popup-image {
+    width: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.cul-popup-caption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Back Button */
+.cul-back-button {
+    position: fixed;
+    top: 20px;
+    right: 7px;
+    background-color: #ffba00;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cul-back-button:hover {
+    background-color: #bb8a52;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .cul-detail-header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .cul-detail-title {
+        font-size: 2rem;
+    }
+
+    .cul-detail-story {
+        font-size: 1rem;
+    }
+
+    .cul-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .cul-gallery-item {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cul-detail-header {
+        gap: 15px;
+    }
+
+    .cul-detail-title {
+        font-size: 1.8rem;
+    }
+
+    .cul-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .cul-popup-image {
+        max-height: 70vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .cul-detail-title {
+        font-size: 1.5rem;
+    }
+
+    .cul-detail-story {
+        font-size: 0.9rem;
+    }
+
+    .cul-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .cul-popup-caption {
+        font-size: 0.8rem;
+    }
+
+    .cul-back-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

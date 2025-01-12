@@ -1,0 +1,109 @@
+/* General container styles */
+.food-lifestyle-container {
+    padding: 20px;
+    background-color: #6D9773;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  /* Tab navigation styles */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .tabs button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #2c3e50;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tabs button:hover {
+    background-color: #eaeaea;
+  }
+  
+  .tabs .active {
+    background-color: #BB8A52;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Content section styles */
+  .content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Media Queries */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+  .food-lifestyle-container {
+      padding: 15px;
+  }
+
+  .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+  }
+
+  .tabs {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px;
+  }
+
+  .tabs button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+  }
+
+  .content {
+      padding: 15px;
+  }
+}
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+  .food-lifestyle-container {
+      padding: 10px;
+  }
+
+  .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+  }
+
+  .tabs {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .tabs button {
+      width: 100%; /* Make buttons full-width for smaller screens */
+      text-align: center;
+      padding: 10px;
+      font-size: 0.85rem;
+  }
+
+  .content {
+      padding: 10px;
+  }
+}
+  
