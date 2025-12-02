@@ -40,7 +40,7 @@ const Contact = () => {
                 through email, phone, or visit us in Penang for any 
                 inquiries or collaboration opportunities.</p>
             <ul>
-                <li><img src={mail_icon} alt="" />Contact@GreaStack.dev </li>
+                <li><img src={mail_icon} alt="" />TourPenang@gmail.com </li>
                 <li><img src={phone_icon} alt="" />+60 1139502751 </li>
                 <li><img src={locate_icon} alt="" />Penang </li>
             </ul>
